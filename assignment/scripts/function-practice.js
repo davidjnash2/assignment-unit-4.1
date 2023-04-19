@@ -7,7 +7,7 @@ console.log('***** Function Practice *****')
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
+} // end hello
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
@@ -16,22 +16,26 @@ console.log('Test - should say "Hello World!"', hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
   return 'Hello ' + name + '!';
-}
+} // end helloName
 // Remember to call the function to test
-console.log( 'running helloName:', helloName('Dave'));
 console.log( 'running helloName:', helloName('Levi'));
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
-}
+function addNumbers( firstNumber, secondNumber) {
+  let result = firstNumber + secondNumber;
+  return result;
+} // end addNumbers
+  console.log('result of addNumbers with 5 & 23:', addNumbers(5, 23)); // return firstNumber + secondNumber;
+
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
-}
+function multiplyThree( firstNumber, secondNumber, thirdNumber ){
+  let result = firstNumber * secondNumber * thirdNumber;
+  return result;
+} // end multiplyThree
+console.log('The result of multiplyThree is:', multiplyThree(34, 34, 34));
 
 
 // 5. Function that will return true if a number is positive, 
