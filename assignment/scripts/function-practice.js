@@ -32,7 +32,7 @@ function addNumbers( firstNumber, secondNumber) {
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber ){
-  let result = firstNumber * secondNumber * thirdNumber;
+  let result = firstNumber * secondNumber * thirdNumber; 
   return result;
 } // end multiplyThree
 console.log('The result of multiplyThree is:', multiplyThree(34, 34, 34));
@@ -54,23 +54,32 @@ console.log( 'isPositive - should say true', isPositive(0.00000000000001) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-0.0000000000001) );
 
-
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
 function getLast( array ) {
-return array[array.length-1]
-}
-let stuffs = ['tire', 'fish', 'Lego', 'Jedi', 'toe', 'car'];
-let things = [];
-console.log(getLast(stuffs));
-console.log(getLast(things));
+  return array[array.length-1]
+} //end getLast 
+
+console.log(getLast(['tire', 'fish', 'Lego', 'Jedi', 'toe', 'car']));
+console.log(getLast([]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find( value, array ){
+  let other = false;
+  for (i=0; i<array.length; i++){
+    if (value===array[i]){
+      other = true;
+    }
+  }
+return other
 }
-console.log();
+
+console.log('find - should say true:', find( 'Jedi', ['tire', 'fish', 'Lego', 'Jedi', 'toe', 'car']));
+console.log('find - should say false:', find( 'chip', ['tire', 'fish', 'Lego', 'Jedi', 'toe', 'car']));
 
 // ----------------------
 // Stretch Goals
