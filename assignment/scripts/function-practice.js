@@ -50,9 +50,9 @@ function isPositive( number ) {
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(0.00000000000001) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-0.0000000000001) );
+console.log( 'isPositive - should say true', isPositive(0.00000000000001) ); //test
+console.log( 'isPositive - should say false', isPositive(0) ); //test
+console.log( 'isPositive - should say false', isPositive(-0.0000000000001) ); //test
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -106,6 +106,7 @@ function sumAll( array ) {//define function and parameters
   // TODO: loop to add items
   return sum; //answer for function
 }// end sumAll
+
 console.log(sumAll([5.5, 32, 41])); //test
 
 // 10. Function to return a new array of all positive (greater than zero)
@@ -121,8 +122,11 @@ function positiveNumbers(){//start and name function
   } //end for loop
 return result; //result of function
 } //end positiveNumbers function
+
 console.log('the result of positiveNumbers is:', positiveNumbers()); //test
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+// Problem from CodeWars. It is to take a random, multi-inter positive number, and rearrange the digits to create the highest possible number.
+
