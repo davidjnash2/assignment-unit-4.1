@@ -113,7 +113,7 @@ console.log(sumAll([5.5, 32, 41])); //test
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 function positiveNumbers(){//start and name function
-  let numbers = [-1, -14, -0.000001, -5.5, -32, 41,] //assign input array with values here in function, so that it does not change, as instructed
+  let numbers = [-1, -14, -0.000001, 5.5, 32, 41,] //assign input array with values here in function, so that it does not change, as instructed
   let result = []; //set default result, in this case an empty array for negative values
   for (let i=0; i<numbers.length; i++){ //start loop to run through all values of numbers array
     if (numbers[i]>0){ //conditional statement to capture positive index values 
@@ -128,5 +128,3 @@ console.log('the result of positiveNumbers is:', positiveNumbers()); //test
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
-// Problem from CodeWars. It is to take a random, multi-inter positive number, and rearrange the digits to create the highest possible number.
-
